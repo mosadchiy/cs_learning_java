@@ -16,10 +16,6 @@ public class RecursionMaxNumber {
         }
         int max = array[0];
         int arrayMax = max(Arrays.copyOfRange(array, 1, array.length));
-        if (max >= arrayMax) {
-            return max;
-        } else {
-            return arrayMax;
-        }
+        return max >= arrayMax ? max : arrayMax;
     }
 }
