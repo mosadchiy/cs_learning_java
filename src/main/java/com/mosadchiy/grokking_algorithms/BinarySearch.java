@@ -59,11 +59,11 @@ public class BinarySearch {
         long searchEndTime = System.currentTimeMillis();
 
         System.out.println("Item found: " + itemFound);
-        System.out.println("Simple search took: " + (searchEndTime - searchStartTime));
+        System.out.println("Binary search took: " + (searchEndTime - searchStartTime));
         System.out.println("Number of operations: " + numOfOperations);
     }
 
-    private static int[] generateSortedArray(int arraySize) {
+    static int[] generateSortedArray(int arraySize) {
         int[] newArray = new int[arraySize];
         for (int i = 0; i < arraySize; i++) {
             newArray[i] = i + 1;

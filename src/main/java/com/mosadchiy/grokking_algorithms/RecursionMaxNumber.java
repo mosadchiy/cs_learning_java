@@ -12,7 +12,7 @@ public class RecursionMaxNumber {
 
     private static int max(int[] array) {
         if (array.length == 0) {
-            return 0;
+            return Integer.MIN_VALUE;
         }
         int max = array[0];
         int arrayMax = max(Arrays.copyOfRange(array, 1, array.length));
