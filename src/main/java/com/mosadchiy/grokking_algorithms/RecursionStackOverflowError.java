@@ -1,6 +1,6 @@
 package com.mosadchiy.grokking_algorithms;
 
-public class Recursion2 {
+public class RecursionStackOverflowError {
 
     public static void main(String[] args) {
         countdown(3);
@@ -8,9 +8,6 @@ public class Recursion2 {
 
     private static void countdown(int i) {
         System.out.println(i);
-        if (i <= 0) {
-            return;
-        }
         countdown(i - 1);
     }
 }

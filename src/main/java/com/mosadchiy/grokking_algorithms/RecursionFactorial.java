@@ -1,9 +1,11 @@
 package com.mosadchiy.grokking_algorithms;
 
-public class Factorial {
+public class RecursionFactorial {
 
     public static void main(String[] args) {
-        System.out.println(fact(3));
+        int num = 3;
+        System.out.println("input number: " + num);
+        System.out.println("factorial: " + fact(num));
     }
 
     private static int fact(int x) {
