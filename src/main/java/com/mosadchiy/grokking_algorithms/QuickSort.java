@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] array = new int[]{5, 3, 6, 2, 10};
+        int[] array = new int[]{10, 5, 2, 3};
         System.out.println("input array: " + Arrays.toString(array));
         System.out.println("sorted array: " + Arrays.toString(quickSort(array)));
     }
