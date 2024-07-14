@@ -8,7 +8,6 @@ public class MyListTest {
 
     @Test
     public void printFirstAndLastNodesTest() {
-        System.out.println("print First and Last Nodes Test");
         MyList<String> myList = new MyList<>();
         myList.add("Hello");
         myList.add("World");
@@ -19,7 +18,6 @@ public class MyListTest {
 
     @Test
     public void forwardPrintTest() {
-        System.out.println("forward Print Test");
         MyList.Node<String> node = generateMyStringList().getFirstNode();
         while (true) {
             System.out.println("Node value: " + node.getValue());
@@ -31,8 +29,7 @@ public class MyListTest {
     }
 
     @Test
-    public void backwardPrintViaStackTest() {
-        System.out.println("backward Print Via Stack Test");
+    public void reverseListViaStackTest() {
         MyList.Node<String> node = generateMyStringList().getFirstNode();
         Stack<Object> stack = new Stack<>();
         while (true) {
@@ -48,8 +45,7 @@ public class MyListTest {
     }
 
     @Test
-    public void backwardPrintViaRecursionTest() {
-        System.out.println("backward Print Via Recursion Test");
+    public void reverseListViaRecursionTest() {
         MyList.Node<String> node = generateMyStringList().getFirstNode();
         printListInReverseOrder(node);
     }
